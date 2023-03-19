@@ -10,18 +10,18 @@
     <label for="title"> Введите название книги: </label>
     <input type="text" th:field="*{title}" id="title"/>
     <div style="color:red" th:if="${#fields.hasErrors('title')}" th:errors="*{title}">Ошибка в названии</div>
-    </br>
-    </br>
+    <br/>
+    <br/>
     <label for="author"> Введите автора: </label>
     <input type="text" th:field="*{author}" id="author"/>
     <div style="color:red" th:if="${#fields.hasErrors('author')}" th:errors="*{author}">Ошибка в авторе</div>
-    </br>
-    </br>
+    <br/>
+    <br/>
     <label for="year"> Введите год выпуска: </label>
     <input type="text" th:field="*{year}" id="year"/>
     <div style="color:red" th:if="${#fields.hasErrors('year')}" th:errors="*{year}">Ошибка в годе выпуска</div>
-    </br>
-    </br>
+    <br/>
+    <br/>
     <input type="submit" value="Редактировать"/>
 </form>
 </body>
